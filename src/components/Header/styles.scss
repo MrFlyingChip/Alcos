@@ -1,0 +1,77 @@
+header, p, h1, nav, ul, main{
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  background-color: white;
+  width: 80%;
+  margin: 5px auto 0px auto;
+}
+
+.logo{
+  color: black;
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.refs_and_search{
+  display: inline-block;
+  width: 49%;
+}
+
+.refs{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.search{
+  width: 100%;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.refs_for_specials{
+  text-decoration: underline;
+  color: #8d8d8d;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin: 0 5px 5px 5px;
+}
+
+.refs_for_specials:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.Sign{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+nav{
+  background-color: #ff811a;
+  display: block;
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+.ref{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 5px 8px 5px;
+  width: 120px;
+  text-align: center;
+  font-weight: 600;
+  font-family: Helvetica, Geneva, sans-serif;
+}
+
+.ref:hover{
+  color: white;
+  background-color: #bf6017;
+  text-decoration: underline;
+}
