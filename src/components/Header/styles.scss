@@ -5,8 +5,13 @@ header, p, h1, nav, ul, main{
 
 header{
   background-color: white;
+  width: 100%;
+  margin: 0;
+}
+
+.holder{
   width: 80%;
-  margin: 5px auto 0px auto;
+  margin: 0 auto 5px auto;
 }
 
 .logo{
@@ -14,6 +19,9 @@ header{
   display: inline-block;
   width: 25%;
   text-align: center;
+}
+
+.logo h1{
   font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
@@ -35,7 +43,7 @@ header{
 
 .refs_for_specials{
   text-decoration: underline;
-  color: #8d8d8d;
+  color: dimgray;
   font-family: Geneva, Arial, Helvetica, sans-serif;
   font-weight: lighter;
   margin: 0 5px 5px 5px;
@@ -43,7 +51,7 @@ header{
 
 .refs_for_specials:hover{
   text-decoration: none;
-  color: black;
+  color: red;
 }
 
 .Sign{
@@ -53,7 +61,6 @@ header{
 }
 
 nav{
-  background-color: #ff811a;
   display: block;
   margin: 10px auto 0 auto;
   text-align: center;
@@ -61,17 +68,18 @@ nav{
 
 .ref{
   display: inline-block;
-  color: white;
+  color: dimgray;
   text-decoration: none;
-  padding: 8px 5px 8px 5px;
+  padding: 0px 5px 0px 5px;
   width: 120px;
+  height: 30px;
   text-align: center;
   font-weight: 600;
   font-family: Helvetica, Geneva, sans-serif;
 }
 
 .ref:hover{
-  color: white;
-  background-color: #bf6017;
-  text-decoration: underline;
+  color: red;
+  border-bottom: 3px red solid;
+  text-decoration: none;
 }

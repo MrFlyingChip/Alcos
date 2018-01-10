@@ -1,7 +1,8 @@
 import React from 'react'
 
 import App from './containers/App'
-
+import Registration from './components/Registration'
+import NotFound from './components/NotFound'
 import {Route } from 'react-router'
 
 
@@ -9,9 +10,9 @@ export const routes =(
     <div>
         <Route path='/' component={App}>
             {/*<IndexRoute component={Home} />
-            <Route path='/admin' component={Admin}/>
+            <Route path='/admin' component={Admin}/>*/}
             <Route path='/registration' component={Registration}/>
-            <Route path='/about' component={About}/>
+            {/*<Route path='/about' component={About}/>
             <Route path='/for-manufacturers' component={ForManufacturers}/>
             <Route path='/for-bars' component={ForBars}/>
             <Route path='/account' component={Account}/>
@@ -25,6 +26,6 @@ export const routes =(
                 <Route path='/bars/:bar' component={Bar}/>
             </Route>*/}
         </Route>
-        {/*<Route path='*' component={NotFound} />*/}
+        <Route path='*' component={NotFound} />
     </div>
 )
