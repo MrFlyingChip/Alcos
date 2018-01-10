@@ -2,4 +2,44 @@
   width: 80%;
   margin: 0px auto 10px auto;
   background-color: white;
+  min-height: 700px;
+}
+
+.registration-text{
+  width: 49%;
+  float: left;
+}
+
+.registration-forms{
+  width: 49%;
+  float: right;
+}
+
+.input-text{
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  outline:none;
+}
+
+.input-button{
+  color: white;
+  background-color: red;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 50px 5px 50px;
+  border: 1px solid;
+  border-radius: 30px;
+  outline:none;
+}
+
+.input-button:hover{
+  background-color: #A60000;
+}
+.empty{
+  display: block;
 }
