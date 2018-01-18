@@ -1,0 +1,10 @@
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const COOKIE_CHECK = 'COOKIE_CHECK';
+export const LOGOUT = 'LOGOUT';
+export const FETCH_USER = 'FETCH_USER';
+export const FETCH_USER_DRINKS = 'FETCH_USER_DRINKS';
+export const FETCH_USER_COCKTAILS = 'FETCH_USER_COCKTAILS';
+export const FETCH_USER_BARS = 'FETCH_USER_BARS';
+export const SIGNUP_FAIL = 'SIGNUP_FAIL';
+export const SIGNUP_SUCCESS = 'SIGNUP_SUCCESS';

@@ -1,0 +1,38 @@
+.admin {
+  width: 80%;
+  margin: 0px auto 10px auto;
+  background-color: white;
+  min-height: 700px;
+  font-family: Helvetica, Geneva, sans-serif; }
+
+.input-forms {
+  width: 40%;
+  display: block;
+  margin: 0px auto 10px auto; }
+
+.input-forms h2 {
+  padding-top: 20px;
+  text-align: center; }
+
+.input-text {
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  outline: none; }
+
+.input-button {
+  color: white;
+  background-color: red;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 50px 5px 50px;
+  border: 1px solid;
+  border-radius: 30px;
+  outline: none; }
+
+.input-button:hover {
+  background-color: #A60000; }

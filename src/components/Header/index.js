@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import * as UserActions from "../../actions/UserActions";
 
-import './styles.scss'
-export default class Header extends Component{
+import './styles.css'
+export class Header extends Component{
+    onLogOutClick(e){
+        e.preventDefault();
+        this.props.actions.logout();
+    }
     render(){
         return(
             <header>
@@ -16,9 +23,20 @@ export default class Header extends Component{
                         </div>
                         <input type='search' placeholder='Search' className='search'/>
                     </div>
-                    <div className='Sign'>
-                        <Link to='/registration' className='refs_for_specials'>Sigh up/Log in</Link>
-                    </div>
+                        {this.props.user.isAuthenticated
+                            ?
+                            <div className='Sign'>
+                                {(this.props.user.role === 'admin') ?
+                                    <Link to='/admin' className='refs_for_specials'>Admin</Link>
+                                    : <Link to='/account' className='refs_for_specials'>My account</Link>
+                                }
+                                /<Link onClick={this.onLogOutClick.bind(this)} className='refs_for_specials'>Log out</Link>
+                            </div>
+                            :
+                            <div className='Sign'>
+                            <Link to='/registration' className='refs_for_specials'>Sigh up/Log in</Link>
+                            </div>
+                        }
                     <nav>
                         <Link to='/' className='ref'>Main</Link>
                         <Link to='/drinks' className='ref'>Drinks</Link>
@@ -30,3 +48,18 @@ export default class Header extends Component{
         )
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        user: state.user,
+        alcos: state.alcos
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(UserActions, dispatch)
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header)

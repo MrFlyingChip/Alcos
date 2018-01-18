@@ -1,0 +1,76 @@
+header, p, h1, nav, ul, main {
+  margin: 0px;
+  padding: 0px; }
+
+header {
+  background-color: white;
+  width: 100%;
+  margin: 0; }
+
+.holder {
+  width: 80%;
+  margin: 0 auto 5px auto; }
+
+.logo {
+  color: black;
+  display: inline-block;
+  width: 25%;
+  text-align: center; }
+
+.logo h1 {
+  font-family: Geneva, Arial, Helvetica, sans-serif; }
+
+.refs_and_search {
+  display: inline-block;
+  width: 49%; }
+
+.refs {
+  width: 100%;
+  margin-bottom: 5px; }
+
+.search {
+  width: 100%;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-weight: lighter; }
+
+.refs_for_specials {
+  text-decoration: underline;
+  color: dimgray;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin: 0 5px 5px 5px; }
+
+.refs_for_specials:hover {
+  text-decoration: none;
+  color: red; }
+
+.Sign {
+  display: inline-block;
+  width: 25%;
+  text-align: center; }
+
+nav {
+  display: block;
+  margin: 10px auto 0 auto;
+  text-align: center; }
+
+.ref {
+  display: inline-block;
+  color: dimgray;
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-family: Helvetica, Geneva, sans-serif; }
+
+.ref:hover {
+  color: red;
+  font-weight: 600;
+  width: 120px;
+  height: 30px;
+  padding: 0px 5px 0px 5px;
+  font-family: Helvetica, Geneva, sans-serif;
+  border-bottom: 3px red solid;
+  text-decoration: none; }

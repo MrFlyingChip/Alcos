@@ -1,0 +1,71 @@
+.for-bars {
+  width: 80%;
+  margin: 0px auto 10px auto;
+  background-color: white;
+  min-height: 700px;
+  font-family: Helvetica, Geneva, sans-serif; }
+
+.for-bars h3 {
+  text-align: center;
+  margin-top: 20px; }
+
+.for-bars-text-header {
+  text-align: center;
+  padding-top: 10px; }
+
+.for-bars-text {
+  width: 80%;
+  margin: 5px auto 5px auto; }
+
+.for-bars-form {
+  width: 50%;
+  margin: 5px auto 5px auto; }
+
+.for-bars-list {
+  margin-left: 30px;
+  line-height: 1.5;
+  font-family: Helvetica, Geneva, sans-serif; }
+
+.refs_for_specials {
+  text-decoration: underline;
+  color: dimgray;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin: 0 5px 5px 5px; }
+
+.input-text {
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  width: 60%;
+  outline: none; }
+
+.large-input-text {
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 100px;
+  width: 60%;
+  outline: none; }
+
+.input-button {
+  color: white;
+  background-color: red;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 50px 5px 50px;
+  border: 1px solid;
+  border-radius: 30px;
+  outline: none; }
+
+.input-button:hover {
+  background-color: #A60000; }
+
+.empty {
+  display: block; }

@@ -1,0 +1,52 @@
+.account{
+  width: 80%;
+  min-height: 600px;
+  background-color: white;
+  margin: 0px auto 0 auto;
+}
+.myAccount{
+  font-family: Helvetica, Geneva, sans-serif;
+  font-size: 30px;
+  padding: 20px 0px 10px 30px;
+}
+.photoHolder{
+  width: 25%;
+  display: inline-block;
+}
+
+.accountPhoto{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  margin: 10px 0px 10px 30px;
+}
+
+.account-text{
+  float: right;
+  width: 70%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.account-text p{
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+}
+
+a{
+  text-decoration: none;
+  font-size: 14px;
+  color: dimgray;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: none;
+  font-size: 14px;
+  color: red;
+  font-weight: lighter;
+}
