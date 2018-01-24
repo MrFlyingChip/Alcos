@@ -7,7 +7,8 @@ import {
     FETCH_USER,
     FETCH_USER_DRINKS,
     FETCH_USER_COCKTAILS,
-    FETCH_USER_BARS
+    FETCH_USER_BARS,
+    FETCH_USER_BY_ID
 } from '../constants/User';
 import {firebase} from '../constants/Config'
 import {browserHistory} from 'react-router';
@@ -34,6 +35,22 @@ export function checkCookie() {
     }
 }
 
+export function fetchUserById(id) {
+    return (dispatch, getState) => {
+            firebase.database().ref('Users/' + id).once('value').then(function (snapshot) {
+                var val = snapshot.val();
+                dispatch({
+                    type: FETCH_USER_BY_ID,
+                    payload: {
+                        name: val.nickname,
+                        image: val.img
+                    }
+                })
+            });
+
+        }
+}
+
 export function fetchUser() {
     return (dispatch, getState) => {
         var user = firebase.auth().currentUser;
@@ -52,7 +69,6 @@ export function fetchUser() {
             });
 
         }
-
     }
 }
 

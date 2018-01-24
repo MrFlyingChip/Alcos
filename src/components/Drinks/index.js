@@ -4,32 +4,33 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import * as AlcosActions from "../../actions/AlcosActions";
 import './styles.css'
-import * as AdminActions from "../../actions/AdminActions";
 
 export class Drinks extends Component{
     componentWillMount(){
-        const {drinks} = this.props.alcos;
-        if(drinks < 1){
-            this.props.actions.fetchAllDrinks();
-        }
-
+        this.props.actions.fetchAllTypes();
+        this.props.actions.fetchAllDrinks();
     }
     render(){
         const drinks = this.props.alcos.drinks || [];
+        const types = this.props.alcos.typesDrinks || [];
         const drinksRow = drinks.map(el => {
             return (
-                <Link to={'drinks/' + el.val()}><div className="box">
+                <Link to={'/drinks/' + el.id} key={el.name}><div className="box">
                     <p>
-                        <img src={el.val().imageUrl}/>
+                        <img src={el.imageUrl}/>
                     </p>
-                    <p>{el.val().name}</p>
-                    <p><img src="images/star.png" id="star"/>{el.val().rating}/5</p>
-                    <p><img src="images/comment.png" id="comment"/> {el.var().votes}</p>
+                    <p>{el.name}</p>
+                    <p><img src='images/star.png' alt='' id="star"/>{el.rating}/5</p>
+                    <p><img src="images/comment.png" id="comment"/> {el.votes}</p>
                 </div></Link>
             )
         });
+        const drinkTypes = types.map(el => {
+            return(
+                    <p className={'filter'} key={el.type}><input type="checkbox" name="filter" value={el.type}/>{el.type}</p>
+                )
+        });
         return(
-
             <div className={'drinks'}>
                 <div className="sortbar">
                     <div>
@@ -44,10 +45,8 @@ export class Drinks extends Component{
                 </div>
                 <div id="container">
                     <aside>
-                        <p>
-                            <input type="checkbox" name="acc" type="radio"/>
-                                <label>фильтр</label>
-                        </p>
+                        <p>Filter by drink type:</p>
+                        {drinkTypes}
                     </aside>
                     <div className="grid">
                         {drinksRow}

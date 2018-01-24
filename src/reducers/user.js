@@ -7,7 +7,8 @@ import {
   FETCH_USER,
     FETCH_USER_DRINKS,
     FETCH_USER_COCKTAILS,
-    FETCH_USER_BARS
+    FETCH_USER_BARS,
+    FETCH_USER_BY_ID
 } from '../constants/User';
 
 const initialState = {
@@ -30,7 +31,7 @@ export default function userstate(state = initialState, action) {
         role: action.payload.role,
         name: action.payload.name,
           email: action.payload.email,
-          img: action.payload.img,
+          img: action.payload.image,
         isAuthenticated: action.payload.isAuthenticated,
           drinks: action.payload.drinks,
           cocktails: action.payload.cocktails,
@@ -44,6 +45,12 @@ export default function userstate(state = initialState, action) {
           email: action.payload.email,
           img: action.payload.image
       };
+      case FETCH_USER_BY_ID:
+          return {
+              ...state,
+              name: action.payload.name,
+              img: action.payload.image
+          };
     case FETCH_USER_DRINKS:
       return {
         ...state,

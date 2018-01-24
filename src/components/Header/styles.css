@@ -58,19 +58,20 @@ nav {
   display: inline-block;
   color: dimgray;
   text-decoration: none;
-  padding: 0px 5px 0px 5px;
+  padding: 10px 5px 10px 5px;
   width: 120px;
-  height: 30px;
   text-align: center;
   font-weight: 600;
+  border-right: white solid 2px;
+  border-left: white solid 2px;
   font-family: Helvetica, Geneva, sans-serif; }
 
 .ref:hover {
   color: red;
   font-weight: 600;
   width: 120px;
-  height: 30px;
-  padding: 0px 5px 0px 5px;
+  padding: 10px 5px 10px 5px;
+  border-right: red solid 2px;
+  border-left: red solid 2px;
   font-family: Helvetica, Geneva, sans-serif;
-  border-bottom: 3px red solid;
   text-decoration: none; }

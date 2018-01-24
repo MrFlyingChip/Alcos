@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import Header from '../../components/Header'
 import * as UserActions from "../../actions/UserActions";
+import * as AlcosActions from "../../actions/AlcosActions";
 import './styles.css'
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 
 export class App extends Component{
     componentWillMount() {
+        this.props.actions.fetchAllDrinks();
+        this.props.actions.fetchAllCocktails();
+        this.props.actions.fetchAllBars();
         this.props.actions.checkCookie();
     }
     render() {
@@ -28,7 +32,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(UserActions, dispatch)
+        actions: bindActionCreators({...UserActions, ...AlcosActions}, dispatch)
     }
 }
 

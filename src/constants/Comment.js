@@ -1,0 +1,2 @@
+export const FETCH_ALL_COMMENTS = 'FETCH_ALL_COMMENTS';
+export const ADD_NEW_COMMENT = 'ADD_NEW_COMMENT';

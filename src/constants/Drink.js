@@ -1,3 +1,4 @@
 export const FETCH_ALL_DRINKS = 'FETCH_ALL_DRINKS';
 export const FETCH_DRINK_BY_ID = 'FETCH_DRINK_BY_ID';
 export const SEARCH_DRINK = 'SEARCH_DRINK';
+export const FETCH_ALL_TYPES = 'FETCH_ALL_TYPES';

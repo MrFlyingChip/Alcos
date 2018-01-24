@@ -11,7 +11,13 @@
 }
 .photoHolder{
   width: 25%;
+  cursor: pointer;
+  margin-left: 15px;
+  height: 200px;
   display: inline-block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .accountPhoto{

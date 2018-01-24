@@ -1,0 +1,117 @@
+.drink-cont{
+  width: 80%;
+  min-height: 600px;
+  background-color: white;
+  margin: 5px auto 5px auto;
+}
+
+.drinkName{
+  font-family: Helvetica, Geneva, sans-serif;
+  font-size: 30px;
+  padding: 20px 0px 10px 30px;
+}
+
+.drinkPhoto{
+  width: 40%;
+  margin-left: 15px;
+  height: 500px;
+  display: inline-block;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.drink-text{
+  float: right;
+  width: 40%;
+  text-align: left;
+  padding: 10px 30px 10px 30px;
+}
+
+.drink-text p{
+  font-size: 18px;
+  padding: 10px 30px 10px 30px;
+}
+
+.description{
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  padding: 10px 30px 10px 30px;
+}
+
+.comments{
+  display: block;
+  padding: 10px 30px 10px 30px;
+  font-size: 18px;
+}
+
+
+.comment-img{
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.comment-title{
+  width: 10%;
+  display: inline-block;
+}
+
+.comment-text{
+  float: right;
+  width: 85%;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.rate{
+  text-align: center;
+}
+
+.input-rating{
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 20px;
+  width: 80%;
+  outline:none;
+}
+
+.large-input-comment{
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 100px;
+  width: 80%;
+  outline:none;
+}
+
+.large-input-comment{
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 100px;
+  width: 80%;
+  outline:none;
+}
+
+.large-input-comment{
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 100px;
+  width: 80%;
+  outline:none;
+}

@@ -5,23 +5,26 @@ import {Link} from 'react-router'
 export default class Slider extends Component {
     render() {
         const drinks = this.props.drinks || [];
-        console.log(drinks);
         const drinksRow = drinks.map((el, i) => {
             if (i > 4) {
                 return;
             }
             return (
-                <div className='block--slider-book' key={el.name} style={{'backgroundImage': `url(${el['thumbnailLink']})`}}>
+
+                <div className='block--slider-book' key={el.name} style={{'backgroundImage': `url(${el['imageUrl']})`}}>
                     <div className='block--slider-book-hover'>
                         <span>{el.name}</span>
-                        <Link to={'/drinks/' + el.id}>More</Link>
+                        <span><img src='images/star.png' alt='' id="star"/>{el.rating}/5</span>
+                        <span><img src="images/comment.png" id="comment"/> {el.votes}</span>
+                        <Link to={'/drinks/' + el.id}>no</Link>
                     </div>
                 </div>
+
             )
         });
         return (
             <div className='block--slider'>
-                <h1>{this.props.title}</h1>
+                <h2>{this.props.title}</h2>
                 <div className='block--slider-wrapper'>
                     <div className='block--slider-books'>
                         {drinksRow}

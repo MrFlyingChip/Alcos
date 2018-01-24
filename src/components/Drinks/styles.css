@@ -1,14 +1,8 @@
 .box {
   background: white;
+  align-content: middle;
   min-width: 280px;
   border: 1px solid white; }
-
-.drinks {
-  width: 80%;
-  margin: 0px auto 10px auto;
-  background-color: white;
-  min-height: 700px;
-  font-family: Helvetica, Geneva, sans-serif; }
 
 .sortbar {
   background: white;
@@ -50,13 +44,20 @@ ul {
   flex-direction: row;
   justify-content: space-around; }
 
+body {
+  background-color: white;
+  margin: 0 10% 0 10%;
+  padding: 0; }
+
 main {
   margin: 20px;
   border: 1px solid white;
   padding: 20px; }
 
+nav {
+  background: white; }
+
 p {
-  text-align: center;
   border: none; }
 
 aside {

@@ -18,10 +18,11 @@ export class Account extends Component{
             <div className='account'>
                 <p className={'myAccount'}>My account</p>
                 <hr/>
-                <div className={'photoHolder'}>
-                    <Link><img title={'change photo'} src={this.props.user.img} alt={'change photo'} className={'accountPhoto'}/></Link>
-                </div>
+                <Link>
+                <div className={'photoHolder'} style={{'backgroundImage': `url(${this.props.user.img})`}}>
 
+                </div>
+                </Link>
 
                 <div className={'account-text'}>
                     <p>Login: {this.props.user.name} <Link>[change login]</Link></p>

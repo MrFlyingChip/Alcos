@@ -46,7 +46,7 @@ export class About extends Component{
                     <form onSubmit={this.sendRespond.bind(this)}>
                         <input id='email' type='email' placeholder='E-mail' className='input-text'/>
                         <input id='name' type='text' placeholder='Name' className='input-text'/>
-                        <input id='respond' type='text' placeholder='Respond' className='large-input-text'/>
+                        <textarea maxLength={1000} rows="10" cols="45" id='respond' placeholder='Respond' className='large-input-text'></textarea>
                        
                         <button type='submit' className='input-button'>Send</button>
                     </form>

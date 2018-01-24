@@ -1,0 +1,13 @@
+.home {
+  width: 80%;
+  margin: 0px auto 10px auto;
+  background-color: white;
+  min-height: 700px;
+  font-family: Helvetica, Geneva, sans-serif; }
+
+.home h2 {
+  text-align: center; }
+
+.home p {
+  text-align: center;
+  margin: 0px 30px 10px 30px; }
